@@ -381,3 +381,7 @@ input[readonly] {
     margin-left: 28px;
     margin-top: 15px;
 }
+
+.hide{
+  display: none !important;
+}
