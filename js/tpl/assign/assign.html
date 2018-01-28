@@ -1,0 +1,81 @@
+<div class='assignmentContainer'>
+  <h4 style="margin-bottom: 4%">Question List</h4>
+  <div class='tableHead'>
+    <div class='row'>
+      <div class='col-md-2 all-select'>
+        <div class="form-group">
+          <input type="checkbox" class='all-selector'/>
+          <label for="docNo">Select all</label>
+        </div>
+      </div>
+      <div class='col-md-10 qst-select'>
+        <div>
+          <span>Select questions to assign</span>
+          <button class='btn btn-default pull-right createQuestion'>Author New Question</button>
+          <button class='btn btn-primary showModal pull-right' disabled>Assign</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class='tableBody'>
+    <% for(var i in questions){ %>
+    <div class='qstStrip'>
+      <div class='row'>
+        <div class='col-md-1 no-pad-mar'>
+          <input type="checkbox" class="qstSelect" value="<%= questions[i].id %>">
+        </div>
+        <div class='col-md-1 grey left-curve no-pad-mar'>
+          Sr. No.<div><%= questions[i].id %></div>
+        </div>
+        <div class='col-md-8 no-pad-mar central'>
+          <div class='title'>
+            <%= questions[i].title %>
+          </div>
+          <div class='desc'>
+            <%= questions[i].desc %>
+          </div>
+        </div>
+        <div class='col-md-2 grey right-curve no-pad-mar'>
+          Submission Type:
+          <br/>
+          <% if(questions[i].type=='mcq'){ %>
+          <div>MCQ (quiz)</div>
+          <% } %>
+          <% if(questions[i].type=='subj'){ %>
+          <div>Submission</div>
+          <% } %>
+          <% if(questions[i].type=='psg'){ %>
+          <div>Passage (text)</div>
+          <% } %>
+        </div>
+
+      </div>
+    </div>
+    <% } %>
+  </div>
+</div>
+
+<div class='overLay'></div>
+<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title">Students</h4>
+      </div>
+      <div class="modal-body">
+        <% for(var i=0; i< students.length;i++){ %>
+        <span class='student'>
+          <%= students[i] %>
+        </span>
+        <% } %>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="closeModal btn btn-default">Close</button>
+        <button type="button" id="assignQuestions" class="btn btn-success">Assign</button>
+      </div>
+    </div>
+
+  </div>
+</div>

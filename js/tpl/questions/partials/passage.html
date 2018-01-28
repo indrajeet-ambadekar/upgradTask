@@ -1,0 +1,39 @@
+<% if(type=='psg'){ %>
+  <div class='row'>
+    <div class='col-md-12'>
+      <div class="form-group">
+        <div class="input-group">
+          <label for="qstTitle">Question Title:</label>
+          <input type="text" class='qstInput mndtry' id="qstTitle" placeholder="Type your question here.." value="<%= title %>" />
+        </div>
+      </div>
+    </div>
+    <div class='col-md-12'>
+      <div class="form-group">
+        <div class="input-group">
+          <label for="qstDesc">Question Description:</label>
+          <input type="text" class='qstInput desc' id="qstDesc" placeholder="Type your question description here.." value="<%= desc %>" />
+        </div>
+      </div>
+    </div>
+
+    <div class='col-md-12'>
+      <div class="form-group">
+        <div class="input-group">
+          <label for="qstDesc">Ideal Answer:</label>
+          <textarea type="text" rows="7" class='qstInput desc' id="qstAnswer" placeholder="Type your answer here.." value="<%= desc %>"></textarea>
+        </div>
+      </div>
+    </div>
+
+
+    <div class='col-md-12'>
+      <div class="form-group">
+        <div class="input-group">
+          <label for="qstDesc">Instructions:</label>
+          <input type="text" class='qstInput instruction' id="qstInstr" placeholder="Type instructions here.." value="<%= instr %>" />
+        </div>
+      </div>
+    </div>
+  </div>
+  <% } %>

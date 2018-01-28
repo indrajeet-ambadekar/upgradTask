@@ -1,0 +1,383 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: #585858;
+  font-size: 17px;
+}
+
+red {
+  color: #e34f4d;
+}
+
+.container {
+  max-width: 100%;
+  padding: 0px;
+}
+
+.brand {
+  font-weight: bold;
+  font-size: 2em !important;
+  color: #383838 !important;
+}
+
+.navbar-inner {
+  background: #fff !important;
+  box-shadow: none !important;
+  border: none !important;
+}
+
+.navbar {
+  border-bottom: 3px solid #e6e6e6;
+  padding: 11px 0px;
+}
+
+.loginContainer {
+  border: 1px solid #e6e6e6;
+  margin: 5% 8%;
+}
+
+.loginContainer .title {
+  border-bottom: 1px solid #e6e6e6;
+  padding: 15px 6%;
+  font-size: 1.1em;
+}
+
+.loginContainer .content {
+  padding: 20px 6%;
+}
+
+.loginContainer .plaintext {
+  margin: 20px 0px;
+}
+
+.loginContainer label input,
+.qstnBldr label input {
+  margin-right: 20px;
+  margin-top: 6px;
+  display: block;
+  float: left;
+}
+
+.qstnBldr label input {
+  margin-top: 3px;
+}
+
+.qstnBldr label {
+  margin-top: 10px;
+}
+
+.loginFooter {
+  background: #fafafa;
+  border-top: 1px solid #e6e6e6;
+  padding: 20px 6%;
+  font-size: 14px;
+}
+
+.qstnBldr,
+.quizCntnr {
+  padding: 2% 5%;
+}
+
+.qstnBldr h3 {
+  margin-bottom: 30px;
+}
+
+#qstCntnr {
+  margin-top: 20px;
+}
+
+#qstCntnr label {
+  display: block;
+  width: 100%;
+}
+
+.qstInput {
+  background: #fafafa;
+  border-radius: 5px;
+  border: 2px solid #e6e6e6;
+  width: 80%;
+  padding: 7px 20px;
+  font-size: 18px;
+  color: #929292;
+}
+
+.qstInput.answrs {
+  width: 80%;
+  font-size: 16px;
+  padding: 6px 20px;
+}
+
+.row {
+  width: 100%;
+}
+
+.answrs {
+  margin-top: 20px;
+}
+
+.ansChkBx {
+  margin-top: 30px;
+}
+
+.qstnBldrFtr {
+  background: #fafafa;
+  border-top: 2px solid #e1e1e1;
+  padding: 2% 5%;
+}
+
+.qstnBldrFtr .smallText {
+  font-size: 15px;
+}
+
+textarea {
+  resize: none;
+}
+
+.btn-file {
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-file input[type=file] {
+  position: absolute;
+  top: 0;
+  right: 0;
+  min-width: 100%;
+  min-height: 100%;
+  font-size: 100px;
+  text-align: right;
+  filter: alpha(opacity=0);
+  opacity: 0;
+  background: red;
+  cursor: inherit;
+  display: block;
+}
+
+input[readonly] {
+  background-color: white !important;
+  cursor: text !important;
+}
+
+.qstCard {
+  padding: 20px;
+  background: #f2f2f2;
+  margin: 5px 0px;
+  border: 3px solid #d0d0d0;
+  border-radius: 5px;
+}
+
+.assignmentContainer .desc {
+  font-size: 12px;
+  padding: 10px 0px;
+}
+
+.active {
+  font-weight: bold;
+  font-size: 18px;
+  color: #ea6153;
+  text-decoration: line-through;
+}
+
+.options {
+  margin-left: 5%;
+  margin-top: 20px;
+}
+
+.student {
+  background: #ef9087;
+  color: #fff;
+  padding: 8px 15px;
+  border-radius: 8px;
+  font-size: 13px;
+  margin: 9px;
+  text-transform: capitalize;
+  cursor: pointer;
+  display: block;
+  float: left;
+}
+
+.studentList {
+  padding: 30px;
+}
+
+.assignmentContainer {
+  margin: 3% 12%;
+}
+
+.tableHead {
+  margin: 0px 2%;
+}
+
+.all-select {
+  padding: 20px;
+  border: 3px solid #d6d6d6;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  height: 72px;
+}
+
+.all-select input {
+  margin-right: 10px;
+  -ms-transform: scale(1.3);
+  /* IE */
+  -moz-transform: scale(1.3);
+  /* FF */
+  -webkit-transform: scale(1.3);
+  /* Safari and Chrome */
+  -o-transform: scale(1.3);
+  /* Opera */
+  padding: 10px;
+  margin-top: 5px;
+  display: block;
+  float: left;
+}
+
+.qst-select {
+  border: 3px solid transparent;
+  padding: 0px;
+}
+
+.qst-select div {
+  background: #fafafa;
+  border: 2px solid #d6d6d6;
+  height: 66px;
+  margin-left: -5px;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.qst-select .btn-primary {
+  margin: 10px;
+}
+
+.qst-select .btn-default {
+  border-color: #047afb;
+  color: #047afb;
+  margin: 10px;
+  border: 2px solid;
+}
+
+.qst-select div span {
+  padding: 16px;
+  display: block;
+  float: left;
+  color: #a2a2a2;
+}
+
+.no-pad-mar {
+  padding-left: 0px;
+  padding-right: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.tableBody {
+  margin: 3% 4%;
+}
+
+.qstStrip {
+  margin-bottom: 20px;
+}
+
+.grey {
+  border: 2px solid #e4e4e4;
+  background: #fafafa;
+  height: 100px;
+  text-align: center;
+}
+
+.right-curve {
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  font-size: 15px;
+  padding-top: 10px;
+}
+
+.left-curve {
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  font-size: 15px;
+  padding-top: 10px;
+}
+
+.central {
+  border-top: 2px solid #e4e4e4;
+  border-bottom: 2px solid #e4e4e4;
+  background: #fff;
+  height: 100px;
+  text-align: left;
+  overflow-y: hidden;
+}
+
+.left-curve div,
+.right-curve div {
+  margin-top: 12px;
+  font-weight: 900;
+  font-size: 18px;
+}
+
+.central .title {
+  padding: 10px 20px;
+  font-size: 21px;
+}
+
+.central .desc {
+  padding: 0px 20px;
+  color: #9a9a9a;
+  font-size: 13px;
+}
+
+.qstStrip input {
+  margin-top: 50%;
+}
+
+.overLay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #000;
+  display: none;
+  z-index: 500;
+  width: 100%;
+  height: 100%;
+  opacity: 0.75;
+}
+
+.modal-dialog {
+  margin-top: 10%;
+}
+
+.selectedStudent {
+  background: #ea6153;
+}
+
+.stdTitle {
+  padding: 20px 0px;
+}
+
+.quizCard {
+  background: #f2f2f2;
+  border-radius: 8px;
+  border: 2px solid #e4e4e4;
+  padding: 10px;
+  margin: 20px 0px;
+}
+
+.quizCard .question {
+  font-size: 20px;
+}
+
+.quizCard .question_desc {
+  font-size: 14px;
+  margin: 5px 28px;
+  color: #9e9e9e;
+}
+
+.quizOpt {
+  margin-top: 5px;
+  margin-right: 18px;
+}
+.quizCard .options {
+    margin-left: 28px;
+    margin-top: 15px;
+}

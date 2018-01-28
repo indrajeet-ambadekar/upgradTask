@@ -1,0 +1,65 @@
+<div class='row'>
+  <div class='col-md-12'>
+    <div class="form-group">
+      <div class="input-group">
+        <label for="qstTitle">Question Title:</label>
+        <input type="text" class='qstInput mndtry' id="qstTitle" placeholder="Type your question here.." value="<%= title %>" />
+      </div>
+    </div>
+  </div>
+  <div class='col-md-12'>
+    <div class="form-group">
+      <div class="input-group">
+        <label for="qstDesc">Question Description:</label>
+        <input type="text" class='qstInput desc' id="qstDesc" placeholder="Type your question description here.." value="<%= desc %>" />
+      </div>
+    </div>
+  </div>
+
+  <div class='col-md-9'>
+    <div class="form-group">
+      <div class="input-group">
+        <label for="qstDesc">Answer options: <%= correctAnswer %> <span class='pull-right'>Right Answers:</span></label>
+        <div class='row'>
+          <div class='col-md-10'>
+            <input type="text" id='ans1' class='qstInput answrs mndtry' placeholder="Type your question description here.." value="<%= ans1 %>" />
+          </div>
+          <div class='col-md-2 text-center'>
+            <input type="checkbox" class='ansChkBx' value="1" <%= correctAnswer==1? 'checked': '' %> />
+          </div>
+
+          <div class='col-md-10'>
+            <input type="text" id='ans2' class='qstInput answrs mndtry' placeholder="Type your question description here.." value="<%= ans2 %>" />
+          </div>
+          <div class='col-md-2 text-center'>
+            <input type="checkbox" class='ansChkBx' value="2" <%= correctAnswer==2? 'checked': '' %> />
+          </div>
+
+          <div class='col-md-10'>
+            <input type="text" id='ans3' class='qstInput answrs mndtry' placeholder="Type your question description here.." value="<%= ans3 %>" />
+          </div>
+          <div class='col-md-2 text-center'>
+            <input type="checkbox" class='ansChkBx' value="3" <%= correctAnswer==3? 'checked': '' %> />
+          </div>
+
+          <div class='col-md-10'>
+            <input type="text" id='ans4' class='qstInput answrs mndtry' placeholder="Type your question description here.." value="<%= ans4 %>" />
+          </div>
+          <div class='col-md-2 text-center'>
+            <input type="checkbox" class='ansChkBx ' value="4" <%= correctAnswer==4? 'checked': '' %> />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class='col-md-12'>
+    <div class="form-group">
+      <div class="input-group">
+        <label for="qstDesc">Instructions:</label>
+        <input type="text" class='qstInput instruction' id="qstInstr" placeholder="Type instructions here.." value="<%= instr %>" />
+      </div>
+    </div>
+  </div>
+</div>

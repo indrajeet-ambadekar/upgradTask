@@ -1,0 +1,41 @@
+<div class='qstnBldr'>
+  <button class='btn btn-warning pull-right'>Assign questions to Students</button>
+  <div class='row'>
+    <div class='col-md-12'>
+      <h3><b>Question Builder</b></h3>
+    </div>
+    <div class='col-md-12'>
+      <b>What type of question you want to create?</b>
+    </div>
+    <br/>
+    <div class='col-md-12'>
+      <div class='options'>
+        <div class="radio">
+          <label><input type="radio" class="qstTyp" value="mcq" name="qst">Multiple choice question</label>
+        </div>
+        <div class="radio">
+          <label><input type="radio" class="qstTyp" value="subj" name="qst">Submission type question</label>
+        </div>
+        <div class="radio">
+          <label><input type="radio" class="qstTyp" value="psg" name="qst">Passage(text) type question</label>
+        </div>
+      </div>
+    </div>
+    <div class='col-md-12'>
+      <div id="qstCntnr"></div>
+    </div>
+  </div>
+</div>
+<div class='qstnBldrFtr hide'>
+  <div class='row'>
+    <div class='col-md-8 smallText'>
+      Click author to create a new question and will be automatically added to question list.
+    </div>
+    <div class='col-md-1 text-center'>
+      <button class='btn btn-default'>Cancel</button>
+    </div>
+    <div class='col-md-1 text-center'>
+      <button class='btn btn-primary ' id="createQuest">Author</button>
+    </div>
+  </div>
+</div>
